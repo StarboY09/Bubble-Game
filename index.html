@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main">
+      <div class="header"><h1>Bubble App</h1></div>
+      <div class="cont">
+        <div class="pos">
+          <div onclick="move(0,'yellow')" class="b1 yellow"></div>
+          <div class="arrow" style="left: 95%">
+            <div class="in"></div>
+          </div>
+        </div>
+        <div class="pos">
+          <div onclick="move(1,'blue')" class="b1 blue"></div>
+          <div class="arrow" style="left: 95%"></div>
+        </div>
+        <div class="pos">
+          <div onclick="move(2,'red')" class="b1 red"></div>
+          <div class="arrow" style="left: 95%"></div>
+        </div>
+        <div class="pos">
+          <div onclick="move(3,'green')" class="b1 green"></div>
+          <div class="arrow" style="left: 95%"></div>
+        </div>
+      </div>
+      <div class="last">
+        <button onclick="rest()" class="btn">Reset</button>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
